@@ -8,4 +8,4 @@
  
  ## Find in the clipboard
  
- This code uses pyperclip to get text from the clipboard and find email addresses and phone numbers. It outputs the findings in both the terminal and back to the clipboard so it can be pasted again somewhere else.
+ This code uses pyperclip to get text from the clipboard and find email addresses and phone numbers. It outputs the findings in both the terminal and back to the clipboard so it can be pasted again somewhere else. To use it, copy all the text, then run the file, then paste your results.
