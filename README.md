@@ -1,4 +1,4 @@
-# PythonProjects
+# Python Projects
  This repository has some simple projects written in pyhton.
  
  
