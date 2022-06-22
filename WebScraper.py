@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 """
-This code gets the prices from amazon webstore
+This code gets the prices from amazon web-store
 """
 
 # import the required stuff
@@ -19,6 +19,7 @@ if len(sys.argv) > 1:
 else:
     productURL = pyperclip.paste()
 
+
 # here we defined our function
 def getAmazonPrice(URL):
     res = requests.get(URL)
@@ -26,6 +27,7 @@ def getAmazonPrice(URL):
     soup = bs4.BeautifulSoup(res.text, 'html.parser')
     elems = soup.select('#price')
     return elems[0].text.strip(' ')
+
 
 # here we print the result back to the user
 print("The price is " + getAmazonPrice(productURL))
