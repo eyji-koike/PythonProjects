@@ -4,19 +4,20 @@
 Spyder Editor
 
 This is a script that takes an address as input and opens up in the browser
-the address can be in the cpliboard or the passed as argument
+the address can be in the clipboard or the passed as argument
 """
 
-import webbrowser, sys, pyperclip
+import pyperclip
+import sys
+import webbrowser
 
-sys.argv # ['mapit.py', '870', 'Valencia', 'St.']
+sys.argv  # ['mapit.py', '870', 'Valencia', 'St.']
 
-#Check if command line arguments were passed
+# Check if command line arguments were passed
 if len(sys.argv) > 1:
     # ['mapit.py', '870', 'Valencia', 'St.'] -> '870 Valencia St.'
     address = ''.join(sys.argv[1:])
 else:
     address = pyperclip.paste()
-    
-webbrowser.open('https://www.google.com/maps/place/' + address)
 
+webbrowser.open('https://www.google.com/maps/place/' + address)
