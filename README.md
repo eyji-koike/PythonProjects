@@ -9,3 +9,7 @@
  ## Find in the clipboard
  
  This code uses pyperclip to get text from the clipboard and find email addresses and phone numbers. It outputs the findings in both the terminal and back to the clipboard so it can be pasted again somewhere else. To use it, copy all the text, then run the file, then paste your results.
+
+## Automated open Maps
+
+ This code was made to get the current value from the clipboard, or passed as argument in the command line, and open Google maps on the default browser.
